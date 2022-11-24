@@ -41,13 +41,13 @@ function ComparePage() {
         display: true,
         position: "left",
         ticks:
-          priceType === "market_caps"
+          priceType == "market_caps"
             ? {
                 callback: function (value) {
                   return "$" + convertNumbers(value);
                 },
               }
-            : priceType === "total_volumes"
+            : priceType == "total_volumes"
             ? {
                 callback: function (value) {
                   return convertNumbers(value);
@@ -64,13 +64,13 @@ function ComparePage() {
         display: true,
         position: "right",
         ticks:
-          priceType === "market_caps"
+          priceType == "market_caps"
             ? {
                 callback: function (value) {
                   return "$" + convertNumbers(value);
                 },
               }
-            : priceType === "total_volumes"
+            : priceType == "total_volumes"
             ? {
                 callback: function (value) {
                   return convertNumbers(value);
@@ -221,13 +221,13 @@ function ComparePage() {
         <SelectCoin
           coin={coin1}
           handleChange={(e) => handleCoinChange(e)}
-          allCoins={allCoins.filter((coin) => coin.id !== coin2)}
+          allCoins={allCoins.filter((coin) => coin.id != coin2)}
         />
         <p className="crypto-heading">Crypto 2</p>
         <SelectCoin
           coin={coin2}
           handleChange={(e) => handleCoinChange(e, true)}
-          allCoins={allCoins.filter((coin) => coin.id !== coin1)}
+          allCoins={allCoins.filter((coin) => coin.id != coin1)}
         />
         <SelectDays
           noText={true}

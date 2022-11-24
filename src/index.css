@@ -15,6 +15,7 @@
   --black: #111;
   --grey: #888;
   --darkgrey: #1b1b1b;
+  --lightgrey:#dbd9d9;
 }
 
 [data-theme="dark"] {
@@ -22,6 +23,7 @@
   --black: #fff;
   --grey: #888;
   --darkgrey: #f3f3f3;
+  --lightgrey:#5f5c5c;
 }
 
 html {
