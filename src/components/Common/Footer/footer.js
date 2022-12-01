@@ -26,7 +26,7 @@ function Footer() {
         <RWebShare
           data={{
             text: "Crypto Dashboard made using React JS in 2022",
-            url: "https://crypto-dashboard-nov.netlify.app/",
+            url: "https://crypto-tracker-yeswanth.netlify.app/",
             title: "Crypto Dashboard",
           }}
           onClick={() => console.log("shared successfully!")}
