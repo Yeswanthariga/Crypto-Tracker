@@ -4,10 +4,10 @@ import TrendingUpRoundedIcon from "@mui/icons-material/TrendingUpRounded";
 import "./styles.css";
 import { motion } from "framer-motion";
 import BookmarkBorderRoundedIcon from "@mui/icons-material/BookmarkBorderRounded";
-import { addToWatchlist } from "../../../functions/addToWatchlist";
 import BookmarkRoundedIcon from "@mui/icons-material/BookmarkRounded";
-import { removeFromWatchlist } from "../../../functions/removeFromWatchlist";
 import IconButton from "@mui/material/IconButton";
+import { addToWatchlist } from "../../../functions/Watchlist";
+import { removeFromWatchlist } from "../../../functions/Watchlist";
 
 function Grid({ coin, delay }) {
   const isWatchlist = localStorage.getItem("watchlist")
@@ -26,7 +26,7 @@ function Grid({ coin, delay }) {
     >
       <div className="info-flex">
         <a href={`/coin/${coin.id}`}>
-          <img src={coin.image} className="coin-logo" alt="" />
+          <img src={coin.image} className="coin-logo" />
         </a>
         <a href={`/coin/${coin.id}`}>
           <div className="name-flex">

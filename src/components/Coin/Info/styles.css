@@ -1,9 +1,9 @@
 .desc-links a {
-    text-decoration: underline;
-    color: var(--white);
-  }
-  
-  .desc-links a:hover {
-    color: var(--blue) !important;
-    cursor: pointer;
-  }
+  text-decoration: underline;
+  color: var(--white);
+}
+
+.desc-links a:hover {
+  color: var(--blue) !important;
+  cursor: pointer;
+}

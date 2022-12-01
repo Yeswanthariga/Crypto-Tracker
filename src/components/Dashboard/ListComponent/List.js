@@ -6,10 +6,9 @@ import BookmarkBorderRoundedIcon from "@mui/icons-material/BookmarkBorderRounded
 import { motion } from "framer-motion";
 import Tooltip from "@mui/material/Tooltip";
 import { convertNumbers } from "../../../functions/convertNumber";
-import { removeFromWatchlist } from "../../../functions/removeFromWatchlist";
-import { addToWatchlist } from "../../../functions/addToWatchlist";
 import BookmarkRoundedIcon from "@mui/icons-material/BookmarkRounded";
 import IconButton from "@mui/material/IconButton";
+import { addToWatchlist, removeFromWatchlist } from "../../../functions/Watchlist";
 
 function List({ coin, delay }) {
   const isWatchlist = localStorage.getItem("watchlist")
@@ -20,9 +19,7 @@ function List({ coin, delay }) {
 
   useEffect(() => {
     setVolume(convertNumbers(parseInt(coin.total_volume)));
-  }
-  ,[]
-  );
+  }, []);
 
   return (
     <motion.tr
@@ -34,7 +31,7 @@ function List({ coin, delay }) {
       <a href={`/coin/${coin.id}`}>
         <td className="td-img">
           <Tooltip title="Logo">
-            <img src={coin.image} className="coin-logo" alt="" />
+            <img src={coin.image} className="coin-logo" />
           </Tooltip>
         </td>
       </a>
