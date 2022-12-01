@@ -20,7 +20,7 @@ function Footer() {
         <a href="/">
           <InstagramIcon className="socials-icon" />
         </a>
-        <a href="mailto:avivashishta@gmail.com">
+        <a href="mailto:yeswanthkumarariga7@gmail.com">
           <EmailIcon className="socials-icon" />
         </a>
         <RWebShare
